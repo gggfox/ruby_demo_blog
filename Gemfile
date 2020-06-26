@@ -22,9 +22,6 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# Make errors better looking
-gem 'better_errors', '~> 2.4'
-
 # Bulma CSS
 gem 'bulma-rails', '~> 0.9.0'
 
@@ -50,10 +47,14 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   # Guard is a command line tool to easily handle events on file system modifications.
-  gem 'guard', '~> 2.16', '>= 2.16.2'
+  gem 'guard', '~> 2.16', '>= 2.16.2', require: false
   # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
 
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  # Make errors better looking
+  gem 'better_errors', '~> 2.4'
+
+
 end
 
 group :test do
